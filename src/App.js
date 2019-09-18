@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CounterButton from './CounterButton';
 
 const listNumbers = new Array(30);
 let i;
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <CounterButton />
       </header>
     </div>
   );
