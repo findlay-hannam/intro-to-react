@@ -1,4 +1,4 @@
-import CounterButton from './CounterButton';
+import CounterButton from './IncrementButton';
 import { connect } from 'react-redux';
 import { incrementCount } from './actions/count';
 

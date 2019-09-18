@@ -8,6 +8,7 @@ import CounterButton from './CounterButton';
 import ApiList from './ApiList'
 import Input from './Input';
 import CounterButtonContainer from './CounterButtonContainer';
+import IncrementButtonContainer from './IncrementButtonContainer';
 import CounterDisplayContainer from './CounterDisplayContainer';
 
 const store = createStore(reducers);
@@ -18,7 +19,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <CounterButtonContainer />
+          <IncrementButtonContainer />
           <CounterDisplayContainer />
         </header>
       </div>
