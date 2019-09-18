@@ -1,27 +1,28 @@
 import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducers from './reducers';
 import logo from './logo.svg';
 import './App.css';
 import CounterButton from './CounterButton';
 import ApiList from './ApiList'
 import Input from './Input';
+import CounterButtonContainer from './CounterButtonContainer';
+import CounterDisplayContainer from './CounterDisplayContainer';
 
-const listNumbers = new Array(30);
-let i;
-for (i=0; i<listNumbers.length; i++) {
-  listNumbers[i] = i;
-}
-const listTexts = listNumbers.map(number => `List item ${number}`);
+const store = createStore(reducers);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <CounterButton />
-        <ApiList />
-        <Input />
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <CounterButtonContainer />
+          <CounterDisplayContainer />
+        </header>
+      </div>
+    </Provider>
   );
 }
 
