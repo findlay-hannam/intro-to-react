@@ -20,6 +20,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <IncrementButtonContainer />
+          <CounterButtonContainer />
           <CounterDisplayContainer />
         </header>
       </div>
