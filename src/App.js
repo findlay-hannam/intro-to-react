@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CounterButton from './CounterButton';
+import ApiList from './ApiList';
 
 const listNumbers = new Array(30);
 let i;
@@ -16,6 +17,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <CounterButton />
+        <ApiList />
       </header>
     </div>
   );
