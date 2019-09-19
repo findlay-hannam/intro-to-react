@@ -1,6 +1,7 @@
 import React from 'react';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 import reducers from './reducers';
 import logo from './logo.svg';
 import './App.css';
@@ -11,7 +12,7 @@ import CounterButtonContainer from './CounterButtonContainer';
 import IncrementButtonContainer from './IncrementButtonContainer';
 import CounterDisplayContainer from './CounterDisplayContainer';
 
-const store = createStore(reducers);
+const store = createStore(reducers, applyMiddleware(thunk));
 
 function App() {
   return (
