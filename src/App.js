@@ -11,6 +11,7 @@ import Input from './Input';
 import CounterButtonContainer from './CounterButtonContainer';
 import IncrementButtonContainer from './IncrementButtonContainer';
 import CounterDisplayContainer from './CounterDisplayContainer';
+import ApiListContainer from './ApiListContainer';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -20,6 +21,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <ApiListContainer />
           <IncrementButtonContainer />
           <CounterButtonContainer />
           <CounterDisplayContainer />
