@@ -19,7 +19,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <CounterButton />
         <ApiList />
-        <Input />
       </header>
     </div>
   );
