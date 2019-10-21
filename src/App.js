@@ -5,7 +5,6 @@ import thunk from 'redux-thunk';
 import reducers from './reducers';
 import logo from './logo.svg';
 import './App.css';
-import CounterButtonContainer from './CounterButtonContainer';
 import IncrementButtonContainer from './IncrementButtonContainer';
 import CounterDisplayContainer from './CounterDisplayContainer';
 import ApiListContainer from './ApiListContainer';
@@ -20,7 +19,6 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <ApiListContainer />
           <IncrementButtonContainer />
-          <CounterButtonContainer />
           <CounterDisplayContainer />
         </header>
       </div>
