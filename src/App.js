@@ -4,10 +4,7 @@ import { Provider } from 'react-redux';
 import reducers from './reducers';
 import logo from './logo.svg';
 import './App.css';
-import CounterButton from './CounterButton';
-import ApiList from './ApiList'
 import Input from './Input';
-import CounterButtonContainer from './CounterButtonContainer';
 import IncrementButtonContainer from './IncrementButtonContainer';
 import CounterDisplayContainer from './CounterDisplayContainer';
 
